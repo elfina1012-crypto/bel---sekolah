@@ -1,0 +1,159 @@
+```html
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Bel Sekolah SMPN 29</title>
+
+<style>
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    text-align: center;
+}
+
+.header {
+    background: #1e3a8a;
+    color: white;
+    padding: 25px 10px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 26px;
+}
+
+.header p {
+    margin: 8px 0 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+.judul {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.bel {
+    width: 100%;
+    padding: 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 15px;
+    background: white;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.bel:active {
+    transform: scale(0.97);
+}
+
+.footer {
+    margin-top: 25px;
+    font-size: 13px;
+    color: #64748b;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+
+<h1>🔔 BEL SEKOLAH</h1>
+
+<p>SMPN 29 Solok Selatan</p>
+
+</div>
+
+<div class="container">
+
+<div class="judul">
+PILIH JENIS BUNYI BEL
+</div>
+
+<button class="bel"
+onclick="bunyi('audio/bel-masuk.mp3')">
+
+🔔 BEL MASUK
+
+</button>
+
+<button class="bel"
+onclick="bunyi('audio/bel-pelajaran.mp3')">
+
+📚 MULAI PELAJARAN
+
+</button>
+
+<button class="bel"
+onclick="bunyi('audio/bel-istirahat.mp3')">
+
+☕ BEL ISTIRAHAT
+
+</button>
+
+<button class="bel"
+onclick="bunyi('audio/bel-zuhur.mp3')">
+
+🕌 SALAT ZUHUR
+
+</button>
+
+<button class="bel"
+onclick="bunyi('audio/bel-pulang.mp3')">
+
+🏫 BEL PULANG
+
+</button>
+
+<button class="bel"
+onclick="bunyi('audio/bel-darurat.mp3')">
+
+🚨 BEL DARURAT
+
+</button>
+
+<div class="footer">
+
+Aplikasi Bel Sekolah<br>
+SMPN 29 Solok Selatan
+
+</div>
+
+</div>
+
+<script>
+
+function bunyi(file) {
+
+    const audio = new Audio(file);
+
+    audio.play();
+
+}
+
+</script>
+
+</body>
+
+</html>
+```
